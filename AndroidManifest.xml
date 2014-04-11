@@ -26,12 +26,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SettingsTouchDotActivity"
-            	android:windowSoftInputMode="stateHidden|adjustResize"></activity>
-        <activity android:name=".SettingsTouchPanelActivity"
-            	android:windowSoftInputMode="stateHidden|adjustResize"></activity>
-        <activity android:name=".PickUpAppActivity"></activity>
-        <activity android:name=".PickUpKeyActivity"></activity>
         <service android:name="com.leon.assistivetouch.main.AssistiveTouchService"
             	 android:label="@string/service_name"
             	 android:exported="false">
@@ -45,7 +39,6 @@
                 <action android:name="com.leon.assistivetouch.assistive_notify_action"/>
             </intent-filter>
         </service>
-        <receiver android:name=".CheckUpdateReceiver"></receiver>
         <receiver android:name=".BootReceiver">
             <intent-filter android:priority="1000">
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
